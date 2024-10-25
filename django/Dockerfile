@@ -12,4 +12,4 @@ USER developer
 
 WORKDIR /home/developer/app
 
-CMD tail -f /dev/null
+CMD ["tail", "-f", "/dev/null"]
