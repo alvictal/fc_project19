@@ -3,8 +3,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    ports:
+      - 8000:8000
     volumes:
-      - .:/home/developer/app
+      - .:/home/developer/app:cached
     tty: true
     stdin_open: true
     
