@@ -1,0 +1,12 @@
+services:
+  nextjs:
+    build:
+        context: .
+        dockerfile: Dockerfile
+    volumes:
+      - .:/home/bun/app:cached
+    ports:
+      - 3000:3000
+
+    tty: true
+    stdin_open: true
