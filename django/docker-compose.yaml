@@ -1,0 +1,10 @@
+services:
+  django:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/home/developer/app
+    tty: true
+    stdin_open: true
+    
